@@ -14,7 +14,8 @@
 </head>
 <body>
 	<header id="main_navigation" class="clearfix">
-		<a href="#" class="name" >Soyun Yoon</a>
+		<%= link_to "Soyun Yoon", root_path, class: "name" %>
+		<!-- <a href="#" class="name" >Soyun Yoon</a> -->
 		<nav>
 			<%=link_to "Articles", posts_path %>
 			
@@ -24,6 +25,15 @@
 		</header>
 
 <%= yield %>
+
+<footer id="main_footer">
+	<p class="copyright">&copy;2016 Soyun Yoon</p>
+	<nav>
+		<a href="https://twitter.com/soyunyon" target="_blank"><i class="fa fa-twitter"></i></a>
+		<a href="https://www.facebook.com/soyunyoon" target="_blank"><i class="fa fa-facebook"></i></a>
+		<a href="https://www.github.com/jessyon" target="_blank"><i class="fa fa-github"></i></a>
+	</nav>
+</footer>       
 
 </body>
 </html>
