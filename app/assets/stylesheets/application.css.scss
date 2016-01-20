@@ -3,7 +3,7 @@
 
 $dark:#424652;
 $border:#E9E9E9;
-$white:#ffffff;
+$white:#FFFFFF;
 $light:#9A9DA4;
 $highlight:#8BC6DB;	
 
@@ -17,7 +17,7 @@ body{
 
 .wrapper {
 	width: 90%;
-	margin: 0 auto;
+	margin: .3em auto;
 }
 
 .skinny_wrapper {
@@ -38,6 +38,11 @@ body{
 .clearfix:after{
 	clear:both;
 }
+
+a:link{
+           color:$dark;
+       }
+
 
 h1, h2, h3, h4, h5, h6, p, ul, li {
 	color: $dark;
@@ -80,7 +85,7 @@ hr{
 
 
 #main_navigation {
-	padding: 2.5em 5%;
+	padding: 1em 5% 3em 5%;
 	border-bottom: 1px solid $border;
 	.name {
 		font_weight: 700;
@@ -90,7 +95,9 @@ hr{
 		border: 2px solid $border;
 		padding:1.1rem 1.6rem;
 		text-decoration: none;
-		color: $dark;
+		color: $dark;&:hover{
+				color:$highlight;
+			}
 		float: left;
 		}
 	nav {
@@ -98,6 +105,9 @@ hr{
 		padding-top:1.2rem;
 		a{
 			color:$dark;
+			&:hover{
+				color:$highlight;
+			}
 			text-decoration:none;
 			margin: 0 1rem;
 			font-size: 1rem;
@@ -167,6 +177,19 @@ input[type="submit"], .button{
 		border: 2px solid $highlight;
 		color: $highlight;
 		   }
+}
+
+.project_button{
+	background:$highlight;
+	color:$white;
+	text-decoration: none;	
+	padding: 1em 2em;
+
+}
+
+.button_wrapper{
+	margin:4em 0 0 0;
+	text-align: center
 }
 
 

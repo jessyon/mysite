@@ -13,11 +13,20 @@
 }
 
 
+
+
 .homepage_content{
 
 	h2{
+
 		font-size: 1.2rem;
 		text-transform: uppercase;
+		border-bottom: none;
+		color:$dark;
+			&:hover{
+				color:$highlight;
+			}
+
 	}
 
 	
@@ -25,12 +34,20 @@
 		font-size: 1.3em;
 		font-weight: 400;
 		margin-bottom: .5em;
+		color:$dark;
+			&:hover{
+				color:$highlight;
+			}
 	}
+
 
 	a{
 		text-decoration:none;
-		color:$dark;
-		&:hover{color:$highlight; text-decoration:none; }
+		color: $dark;&:hover{
+				color:$highlight; 
+		text-decoration:none;
+
+		}
 	}
 	
 	.date{
@@ -51,7 +68,7 @@
 	
 		a{
 		color: $highlight;
-		font-weight:600;
+		font-weight:500;
 		text-decoration: none;
 
 		}
