@@ -1,6 +1,7 @@
 #posts_wrapper{
 	padding: 3em 0;
 	.post{
+		padding: 2em 0 0 0;
 		text-align: center;
 		.date{
 		font-size: .9em;
@@ -29,6 +30,7 @@
 //------- Post Show
 #post_show_content, #content{
 	header{
+	padding: 1.5em 0 0 0;
 		text-align: center;
 		.date{
 			font-size: .9em;
