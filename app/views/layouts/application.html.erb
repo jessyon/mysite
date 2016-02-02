@@ -21,7 +21,16 @@
 			<%=link_to "Projects", projects_path %>
 			
 			
-			<a href="#">Contact</a>
+		  <%= link_to "Contact",  new_contact_path %>
+
+		  <%if user_signed_in? %>
+		  	<%= link_to "Change your password", edit_user_registration_path %>
+			
+			<%= link_to "Logout", destroy_user_session_path, method: :delete %>        
+		  <% elsif %>
+		  	<%= link_to "Sign In",  new_user_session_path %>
+		  <%end%>
+
 		</nav>
 		</header>
 		

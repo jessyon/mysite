@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :companies
   devise_for :users
   resources :posts
   resources :projects
@@ -6,5 +7,5 @@ Rails.application.routes.draw do
   get 'welcome/index'
   root 'welcome#index'
 
-  get '*path' => redirect('/')
+  #get '*path' => redirect('/')
 end
